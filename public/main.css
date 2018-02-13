@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #cccccc;
+    ;
+}
+
+.mainBox {
+    /* position: absolute; */
+    float: right;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+.mainBox .title {
+    text-align: left;
+}
+
+.mainBox #loginBox span,
+.mainBox #registerBox span {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.mainBox .rightBox input {
+    border-radius: 5px;
+}
+
+.mainBox .rightBox button {
+    background-color: aqua;
+}
+
+.mainBox .colWarn {
+    color: red;
+}
