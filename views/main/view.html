@@ -2,12 +2,13 @@
 <div class="listBox">
     <h1>{{content.title}}</h1>
     <p class="colDefault">
-        作者：<span class="colInfio">{{content.user.username}}</span> - 时间：
-        <span class="colInfio">{{content.addTime|date('Y年m月d日 H:i:s',-8*60)}}</span> - 阅读量：
-        <span class="colInfio">{{content.views}}</span>
+        作者：<span class="colInfo">{{content.user.username}}</span> - 时间：
+        <span class="colInfo">{{content.addTime|date('Y年m月d日 H:i:s',-8*60)}}</span> - 阅读量：
+        <span class="colInfo">{{content.views}}</span>
     </p>
     <div class="content">
         {{content.content}}
     </div>
+    <div class="colInfo"><a href="/admin/comment/add?contentId={{content._id.toString()}}">添加评论</a></div>
 </div>
 {% endblock%}
