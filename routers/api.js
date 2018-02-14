@@ -94,7 +94,7 @@ router.post('/user/login', function(req, res, next) {
             res.json(responseData);
             return;
         }
-
+        console.log('123');
         //用户名和密码都正确
         responseData.code = 3;
         responseData.msg = "登陆成功";
